@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-with open("variable_load_5.py", "r") as file:
-    content = file.read()
+from variable_load_5 import a
 
-local_vars = {}
-exec(content, {}, local_vars)
+if __name__ == "__main__":
+    print(a)
 
-a = local_vars['a']
-print(a)
